@@ -35,6 +35,7 @@ public class LoginText {
         driver.findElement(By.cssSelector("#sorter"));
         driver.findElement(By.cssSelector("body"));
         driver.findElement(By.cssSelector("#maincontent > div.columns > div.column.main > div:nth-child(3) > h2"));
+        new AssertionError(equals("loginButton"));
         driver.findElement(By.cssSelector("body > div.page-wrapper > div.footer-container.page-footer > div > div > div.footer-primary-container.section-container > div > div > div.clearfix > div:nth-child(3) > div > div > div > div:nth-child(4) > p > a"));
         driver.findElement(By.cssSelector("body"));
         driver.findElement(By.cssSelector("#top > div > div.header-top-container > div > div > div.left-column > div:nth-child(1) > a:nth-child(2)"));
