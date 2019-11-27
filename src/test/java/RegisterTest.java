@@ -1,4 +1,5 @@
 import org.apache.commons.lang3.RandomStringUtils;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,8 @@ public class RegisterTest {
         sortByElement.selectByIndex(1);
         driver.get("https://fasttrackit.org/selenium-test/home-decor/electronics.html");
         sortByElement = new Select(driver.findElement(By.cssSelector("Price")));
+        driver.findElement(By.cssSelector("#email")).sendKeys("razvancluj88@yahoo.com");
+
 
     }
 }
